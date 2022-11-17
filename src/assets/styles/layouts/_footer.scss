@@ -1,0 +1,48 @@
+footer {
+  width: 100%;
+  @media (min-width: map-get($breakpoints, "medium")) {
+    padding: 0 5%;
+  }
+  @media (min-width: map-get($breakpoints, "large")) {
+    padding: 0 15%;
+  }
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 2px $light-main-color solid;
+  align-items: center;
+  padding: 20px 0;
+  gap: 15px;
+  &__pages {
+    display: flex;
+    gap: 30px;
+    a {
+      text-decoration: none;
+      color: $main-color;
+      &:active {
+        color: $dark-main-color;
+      }
+      &:hover {
+        color: $light-main-color;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    svg {
+      fill: $main-color;
+      width: 18px;
+    }
+  }
+
+  @media (min-width: map-get($breakpoints, "medium")) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+}

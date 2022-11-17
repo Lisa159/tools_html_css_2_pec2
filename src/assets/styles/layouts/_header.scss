@@ -1,0 +1,16 @@
+header {
+  width: 100%;
+  border-bottom: 2px $light-main-color solid;
+  @media (min-width: map-get($breakpoints, "medium")) {
+    padding: 0 5%;
+  }
+  @media (min-width: map-get($breakpoints, "large")) {
+    padding: 0 15%;
+  }
+
+  nav {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+  }
+}
