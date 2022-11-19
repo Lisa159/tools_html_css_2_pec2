@@ -1,4 +1,5 @@
 @import "header";
+@import "profile";
 @import "footer";
 
 html {
@@ -24,4 +25,5 @@ main {
   flex: 1 0 auto;
   width: inherit;
   height: 100%;
+  padding: 50px 15%;
 }
