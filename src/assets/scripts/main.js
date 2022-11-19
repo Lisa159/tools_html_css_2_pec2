@@ -21,7 +21,7 @@ bootstrap;
     document.getElementsByClassName("nav-link")[1];
     document.getElementsByClassName("nav-link")[1].ariaCurrent = "page";
     document.getElementsByClassName("nav-link")[1].classList.add("active");
-  } else if (loc.includes("gallery")) {
+  } else if (loc.includes("contact")) {
     document.getElementsByClassName("nav-link")[2];
     document.getElementsByClassName("nav-link")[2].ariaCurrent = "page";
     document.getElementsByClassName("nav-link")[2].classList.add("active");

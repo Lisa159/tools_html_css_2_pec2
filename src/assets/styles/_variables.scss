@@ -7,9 +7,10 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 
 $main-color: rgb(20, 142, 148);
 $light-main-color: color.scale($main-color, $lightness: 80%);
-$dark-main-color: color.scale($main-color, $blackness: 50%);
+$bg-light-main-color: color.scale($main-color, $lightness: 90%);
+$dark-main-color: color.scale($main-color, $blackness: 30%);
 
-$mqMinWidth: 420px;
+$contrast-color: rgb(256, 256, 256);
 
 $breakpoints: (
   "small": 480px,
@@ -19,6 +20,6 @@ $breakpoints: (
 
 $--bs-navbar-padding-x: 50px;
 
-// $theme-colors: (
-//   "primary": #fabada // pon el código de color que prefieras,
-// );
+$theme-colors: (
+  "primary": $dark-main-color,
+);

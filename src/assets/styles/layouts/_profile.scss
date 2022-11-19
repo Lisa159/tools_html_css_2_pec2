@@ -1,16 +1,14 @@
-h1 {
-  text-align: center;
-  color: $dark-main-color;
-  text-transform: uppercase;
-}
+.main-profile {
+  padding: 50px 10%;
 
-.photos {
-  width: 100%;
-  padding: 60px 0;
-  &__container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
+  .photos {
+    padding: 60px 0;
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: center;
+    }
   }
 }

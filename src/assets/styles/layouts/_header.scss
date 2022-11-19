@@ -1,4 +1,4 @@
-header {
+.header-container {
   width: 100%;
   border-bottom: 2px $light-main-color solid;
   @media (min-width: map-get($breakpoints, "medium")) {

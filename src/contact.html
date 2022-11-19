@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>Festival de música</title>
+    </head>
+    <body>
+        <include src="./views/header.html"></include>
+        <main class="main-contact">
+            <section>
+                <h1>Formulario de contacto</h1>
+
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button
+                            class="nav-link active"
+                            id="nav-home-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#nav-home"
+                            type="button"
+                            role="tab"
+                            aria-controls="nav-home"
+                            aria-selected="true"
+                        >
+                            Negocios
+                        </button>
+                        <button
+                            class="nav-link"
+                            id="nav-profile-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#nav-profile"
+                            type="button"
+                            role="tab"
+                            aria-controls="nav-profile"
+                            aria-selected="false"
+                        >
+                            Nuevos integrantes
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div
+                        class="tab-pane fade show active"
+                        id="nav-home"
+                        role="tabpanel"
+                        aria-labelledby="nav-home-tab"
+                    >
+                        <p class="text-center fs-4 my-5">
+                            Contacta con nosotros si estás interesado en
+                            nuestros servicios para algún evento.
+                        </p>
+                        <div class="form-container">
+                            <form>
+                                <fieldset>
+                                    <legend>Datos personales</legend>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"
+                                            >Nombre y apellido</span
+                                        >
+                                        <input
+                                            type="text"
+                                            aria-label="Nombre"
+                                            class="form-control"
+                                        />
+                                        <input
+                                            type="text"
+                                            aria-label="Apellido"
+                                            class="form-control"
+                                        />
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"
+                                            >Empresa</span
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            aria-label="Empresa"
+                                            aria-describedby="basic-addon1"
+                                        />
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"
+                                            >Email</span
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            aria-label="Email"
+                                            aria-describedby="basic-addon1"
+                                        />
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-text"
+                                            >Mensaje</span
+                                        >
+                                        <textarea
+                                            class="form-control"
+                                            aria-label="With textarea"
+                                        ></textarea>
+                                    </div>
+                                </fieldset>
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary mt-4"
+                                >
+                                    Enviar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="nav-profile"
+                        role="tabpanel"
+                        aria-labelledby="nav-profile-tab"
+                    >
+                        <h2 class="text-center my-4">
+                            Estamos buscando nuevos integrantes!
+                        </h2>
+                        <p class="text-center fs-4 my-5">
+                            Si quieres empezar una carrera profesional como
+                            músico, no lo dudes, rellena el formulario y
+                            persigue tu sueño!
+                        </p>
+                        <div class="form-container">
+                            <form>
+                                <fieldset>
+                                    <legend>Datos personales</legend>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"
+                                            >Nombre y apellido</span
+                                        >
+                                        <input
+                                            type="text"
+                                            aria-label="Nombre"
+                                            class="form-control"
+                                        />
+                                        <input
+                                            type="text"
+                                            aria-label="Apellido"
+                                            class="form-control"
+                                        />
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"
+                                            >Email</span
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            aria-label="Email"
+                                            aria-describedby="basic-addon1"
+                                        />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label
+                                            class="form-check-label"
+                                            for="flexCheckDefault"
+                                        >
+                                            Talentos:
+                                        </label>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="singerCheck"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="singerCheck"
+                                            >
+                                                Canto
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="guitarCheck"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="guitarCheck"
+                                            >
+                                                Guitarra
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="bassCheck"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="bassCheck"
+                                            >
+                                                Bajo
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="pianoCheck"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="pianoCheck"
+                                            >
+                                                Piano
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="otherChecked"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="otherChecked"
+                                            >
+                                                Otro
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-text"
+                                            >Cuéntanos sobre ti!</span
+                                        >
+                                        <textarea
+                                            class="form-control"
+                                            aria-label="With textarea"
+                                        ></textarea>
+                                    </div>
+                                </fieldset>
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary mt-4"
+                                >
+                                    Enviar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>

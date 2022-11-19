@@ -1,5 +1,7 @@
 @import "header";
 @import "profile";
+@import "festival";
+@import "contact";
 @import "footer";
 
 html {
@@ -25,5 +27,11 @@ main {
   flex: 1 0 auto;
   width: inherit;
   height: 100%;
-  padding: 50px 15%;
+  color: $dark-main-color;
+}
+
+h1 {
+  text-align: center;
+  color: $dark-main-color;
+  text-transform: uppercase;
 }
