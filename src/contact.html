@@ -17,8 +17,7 @@
         <main class="main-contact">
             <section>
                 <h1>Formulario de contacto</h1>
-
-                <nav>
+                <nav class="mt-5">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <button
                             class="nav-link active"
@@ -57,8 +56,14 @@
                             Contacta con nosotros si estás interesado en
                             nuestros servicios para algún evento.
                         </p>
+
                         <div class="form-container">
-                            <form>
+                            <form
+                                name="contact-business"
+                                method="POST"
+                                data-netlify="true"
+                                onSubmit="submit"
+                            >
                                 <fieldset>
                                     <legend>Datos personales</legend>
                                     <div class="input-group mb-3">
@@ -69,11 +74,15 @@
                                             type="text"
                                             aria-label="Nombre"
                                             class="form-control"
+                                            name="name"
+                                            required
                                         />
                                         <input
                                             type="text"
                                             aria-label="Apellido"
                                             class="form-control"
+                                            name="surname"
+                                            required
                                         />
                                     </div>
                                     <div class="input-group mb-3">
@@ -84,6 +93,7 @@
                                             type="text"
                                             class="form-control"
                                             aria-label="Empresa"
+                                            name="business"
                                             aria-describedby="basic-addon1"
                                         />
                                     </div>
@@ -94,8 +104,10 @@
                                         <input
                                             type="text"
                                             class="form-control"
+                                            name="email"
                                             aria-label="Email"
                                             aria-describedby="basic-addon1"
+                                            required
                                         />
                                     </div>
                                     <div class="input-group">
@@ -105,9 +117,31 @@
                                         <textarea
                                             class="form-control"
                                             aria-label="With textarea"
+                                            name="message"
+                                            required
                                         ></textarea>
                                     </div>
                                 </fieldset>
+                                <div class="col-12 mt-4">
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="invalidCheck"
+                                            required
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="invalidCheck"
+                                        >
+                                            Acepto los terminos y condiciones
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Selecciona antes de enviar.
+                                        </div>
+                                    </div>
+                                </div>
                                 <button
                                     type="submit"
                                     class="btn btn-primary mt-4"
@@ -132,7 +166,12 @@
                             persigue tu sueño!
                         </p>
                         <div class="form-container">
-                            <form>
+                            <form
+                                name="contact-new-member"
+                                method="POST"
+                                data-netlify="true"
+                                onSubmit="submit"
+                            >
                                 <fieldset>
                                     <legend>Datos personales</legend>
                                     <div class="input-group mb-3">
@@ -143,11 +182,15 @@
                                             type="text"
                                             aria-label="Nombre"
                                             class="form-control"
+                                            name="name"
+                                            required
                                         />
                                         <input
                                             type="text"
                                             aria-label="Apellido"
                                             class="form-control"
+                                            name="surname"
+                                            required
                                         />
                                     </div>
                                     <div class="input-group mb-3">
@@ -159,6 +202,8 @@
                                             class="form-control"
                                             aria-label="Email"
                                             aria-describedby="basic-addon1"
+                                            name="email"
+                                            required
                                         />
                                     </div>
                                     <div class="mb-3">
@@ -174,6 +219,7 @@
                                                 type="checkbox"
                                                 value=""
                                                 id="singerCheck"
+                                                name="talent-sing"
                                             />
                                             <label
                                                 class="form-check-label"
@@ -188,6 +234,7 @@
                                                 type="checkbox"
                                                 value=""
                                                 id="guitarCheck"
+                                                name="talent-guitar"
                                             />
                                             <label
                                                 class="form-check-label"
@@ -202,6 +249,7 @@
                                                 type="checkbox"
                                                 value=""
                                                 id="bassCheck"
+                                                name="talent-bass"
                                             />
                                             <label
                                                 class="form-check-label"
@@ -216,6 +264,7 @@
                                                 type="checkbox"
                                                 value=""
                                                 id="pianoCheck"
+                                                name="talent-piano"
                                             />
                                             <label
                                                 class="form-check-label"
@@ -230,6 +279,7 @@
                                                 type="checkbox"
                                                 value=""
                                                 id="otherChecked"
+                                                name="talent-other"
                                             />
                                             <label
                                                 class="form-check-label"
@@ -246,9 +296,31 @@
                                         <textarea
                                             class="form-control"
                                             aria-label="With textarea"
+                                            name="message"
+                                            required
                                         ></textarea>
                                     </div>
                                 </fieldset>
+                                <div class="col-12 mt-4">
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="invalidCheck"
+                                            required
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="invalidCheck"
+                                        >
+                                            Acepto los terminos y condiciones
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Selecciona antes de enviar.
+                                        </div>
+                                    </div>
+                                </div>
                                 <button
                                     type="submit"
                                     class="btn btn-primary mt-4"

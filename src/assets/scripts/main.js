@@ -10,7 +10,7 @@ import * as bootstrap from "bootstrap";
 
 bootstrap;
 
-+(function () {
+(function () {
   let loc = window.location.pathname;
   _removeActiveLinks();
   if (loc.includes("profile")) {
@@ -34,3 +34,26 @@ function _removeActiveLinks() {
     document.getElementsByClassName("nav-link")[el].classList.remove("active");
   });
 }
+
+(function () {
+  "use strict";
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll(".needs-validation");
+  console.log("forms: ", forms);
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener(
+      "submit",
+      function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();

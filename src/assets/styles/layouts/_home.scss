@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 @import "header";
 @import "profile";
 @import "festival";
@@ -12,7 +14,6 @@ html {
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: $font-family-serif;
 }
 
 body {
