@@ -1,8 +1,10 @@
 footer {
   width: 100%;
+
   @media (min-width: map-get($breakpoints, "medium")) {
     padding: 0 5%;
   }
+
   @media (min-width: map-get($breakpoints, "large")) {
     padding: 0 15%;
   }
@@ -11,32 +13,38 @@ footer {
 .footer-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  border-top: 2px $light-main-color solid;
-  align-items: center;
-  padding: 20px 0;
   gap: 15px;
-  &__pages {
-    display: flex;
-    gap: 30px;
-    a {
-      text-decoration: none;
-      color: $main-color;
-      &:active {
-        color: $dark-main-color;
-      }
-      &:hover {
-        color: $light-main-color;
-      }
-    }
-  }
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  border-top: 2px $light-main-color solid;
+
   &__links {
     display: flex;
     gap: 15px;
     align-items: center;
+  }
+
+  &__links a {
+    width: 18px;
+    color: $main-color;
+  }
+
+  &__pages {
+    display: flex;
+    gap: 30px;
+
     a {
       color: $main-color;
-      width: 18px;
+      text-decoration: none;
+
+      &:active {
+        color: $dark-main-color;
+      }
+
+      &:hover {
+        color: $light-main-color;
+      }
     }
   }
 

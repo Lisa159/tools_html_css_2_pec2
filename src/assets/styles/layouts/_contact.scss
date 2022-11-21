@@ -2,22 +2,24 @@
   padding: 50px 10%;
 
   .form-container {
-    width: 100%;
     display: flex;
     justify-content: center;
+    width: 100%;
+
     form {
       width: 75%;
+
       fieldset {
-        border: 1px solid $dark-main-color;
-        box-shadow: 0 1px 4px rgb(20 100 104 / 35%);
         padding: 30px;
+        border: 1px solid $dark-main-color;
+        box-shadow: 0 1px 4px rgb(20 100 104 / .35);
 
         legend {
           float: initial;
           width: fit-content;
-          background-color: $dark-main-color;
-          color: $contrast-color;
           padding: 5px;
+          color: $contrast-color;
+          background-color: $dark-main-color;
         }
       }
     }

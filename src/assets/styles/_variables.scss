@@ -1,16 +1,13 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$main-color: rgb(20, 142, 148);
+$main-color: rgb(20 142 148 / 1);
 $light-main-color: color.scale($main-color, $lightness: 80%);
 $bg-light-main-color: color.scale($main-color, $lightness: 90%);
 $dark-main-color: color.scale($main-color, $blackness: 30%);
 
-$contrast-color: rgb(256, 256, 256);
+$contrast-color: rgb(256 256 256 / 1);
 
 $breakpoints: (
   "small": 480px,
