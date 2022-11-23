@@ -17,7 +17,15 @@ $breakpoints: (
 
 $--bs-navbar-padding-x: 50px;
 
+//Bootstrap
+
 $theme-colors: (
   "primary": $dark-main-color,
-  "nav-link-color": $main-color,
 );
+
+$nav-link-color: $main-color;
+$nav-link-hover-color: $dark-main-color;
+$navbar-light-color: $main-color;
+$navbar-light-hover-color: $dark-main-color;
+$nav-link-color: $main-color;
+$nav-tabs-link-active-color: $dark-main-color;
