@@ -35,3 +35,6 @@ function _removeActiveLinks() {
   });
 }
 
+function goToMembers(){
+  window.location.href = "/profile.html";
+}

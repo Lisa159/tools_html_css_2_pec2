@@ -38,34 +38,60 @@ h1 {
 }
 
 .main-home{
-  display: grid;
-  grid-template-columns: 0.8fr 0.8fr 0.9fr 1.7fr 0.9fr 0.8fr 0.8fr;
-  grid-template-rows: 1.2fr 0.4fr 1.6fr 1.4fr 1.1fr 0.8fr;
-  column-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   padding: 0 20px;
+  margin-bottom: 20px;
 
-  .star1 { grid-area: 1 / 1 / 2 / 3; }
-
-  .star2 { grid-area: 1 / 6 / 2 / 8; }
+  .background{
+    background-image:
+    url("../images/guitar-poster.jpg?width=800");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+  }
 
   .star1,
   .star2{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: none
+  }
+
+  .title { 
+    align-self: center;
+
+    h1{
+      font-size: rem(70);
+    }
+  }
+
+  .subtitle{
+    width: 100%;
+    background-color: #e1fafb;
+    text-align: center;
+    
+    span{
+      font-size: rem(20);
+    }
+  }
+
+  .description{
+    align-self: center;
+    text-align: center;
+    padding: 0 50px;
   }
 
   .date { 
-    grid-area: 3 / 1 / 6 / 3; 
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     text-transform: uppercase;
     gap: 10px;
-
-    span{
-      text-align: end;
-    }
+    width: 100%;
+    background-color: $bg-light-main-color;
+    padding: 20px;
 
     span:first-child{
       font-size: rem(40);
@@ -76,66 +102,104 @@ h1 {
     }
   }
 
-  .members { 
+  .members{
     display: flex;
     flex-direction: column;
-    grid-area: 5 / 5 / 7 / 7; 
     background-color: $bg-light-main-color;
     border: 1px solid $dark-main-color;
     place-items: center;
     justify-content: center;
     gap: 15px;
     border-radius: 10px;
+    width: 200px;
+    height: 100px;
   }
 
-  .title { 
-    align-self: center;
-    grid-area: 1 / 3 / 2 / 6; 
-
-    h1{
-      font-size: rem(70);
-      color: $contrast-color;
-    }
-  }
-
-  .subtitle { 
-    grid-area: 2 / 3 / 3 / 6; 
-    text-align: center;
-
-    span{
-      font-size: rem(20);
-      color: $contrast-color;
-    }
-  }
-
-  .ticket { 
-    grid-area: 3 / 6 / 6 / 8; 
+  .ticket{
     align-self: center;
     text-align: center;
     font-size: rem(20);
   }
+}
 
-  .description { 
-    grid-area: 4 / 3 / 5 / 6; 
-    align-self: center;
-    text-align: center;
-    padding: 0 50px;
+@supports (display: grid) {
+  @media (min-width: map-get($breakpoints, "large")) {
+    .main-home{
+      display: grid;
+      grid-template-columns: 0.8fr 0.8fr 0.9fr 1.7fr 0.9fr 0.8fr 0.8fr;
+      grid-template-rows: 1.2fr 0.4fr 1.6fr 1.4fr 1.1fr 0.8fr;
+      column-gap: 15px;
+      padding: 0 20px;
+    
+      .star1 { grid-area: 1 / 1 / 2 / 3; }
+    
+      .star2 { grid-area: 1 / 6 / 2 / 8; }
+    
+      .star1,
+      .star2{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        background-color: #146468;
+        color: #fff;
+      }
+    
+      .date { 
+        grid-area: 3 / 1 / 6 / 3; 
+        align-items: flex-end;
 
-    span{
-      color: $contrast-color;
+        span{
+          text-align: end;
+        }
+      }
+    
+      .members { 
+        grid-area: 5 / 5 / 7 / 7; 
+        width: 100%;
+        height: 100%;
+      }
+    
+      .title { 
+        grid-area: 1 / 3 / 2 / 6; 
+    
+        h1{
+          color: $contrast-color;
+        }
+      }
+    
+      .subtitle { 
+        grid-area: 2 / 3 / 3 / 6; 
+        background-color: $dark-main-color;
+        span{
+          color: $contrast-color;
+        }
+      }
+    
+      .ticket { 
+        grid-area: 3 / 6 / 6 / 8; 
+      }
+    
+      .description { 
+        grid-area: 4 / 3 / 5 / 6;
+    
+        span{
+          color: $contrast-color;
+        }
+      }
+    
+      .background { 
+        grid-area: 1 / 3 / 7 / 6;
+        height: 100%;
+        background-color: rgba(0 0 0 / 1);
+        background-image:
+          linear-gradient(
+            rgba(0 0 0 / .80),
+            rgba(0 0 0 / .2)
+          ),
+          url("../images/guitar-poster.jpg?width=800");
+      }
     }
-  }
-
-  .background { 
-    grid-area: 1 / 3 / 7 / 6;
-    background-color: rgba(0 0 0 / 1);
-    background-image:
-      linear-gradient(
-        rgba(0 0 0 / .80),
-        rgba(0 0 0 / .2)
-      ),
-      url("../images/guitar-poster.jpg?width=800");
-    background-position: center;
-    background-size: cover;
   }
 }
