@@ -3,12 +3,12 @@
 
   .photos {
     padding: 60px 0;
+  }
 
-    &__container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 50px;
-      justify-content: center;
-    }
+  .photos__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
   }
 }

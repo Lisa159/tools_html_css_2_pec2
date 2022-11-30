@@ -37,54 +37,54 @@ article {
         margin: 20px 150px;
       }
     }
+  }
 
-    .list-data {
-      padding: 20px 0;
-      border-top: 1px solid $light-main-color;
-      border-bottom: 1px solid $light-main-color;
+  .content__container {
+    width: auto;
+  }
 
-      .circle {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        counter-reset: item;
+  .content__container-quote {
+    padding: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    color: $dark-main-color;
+    text-align: justify;
+    background-color: $bg-light-main-color;
+    border-left: 5px solid $dark-main-color;
+  }
 
-        > li {
-          display: flex;
-          margin-bottom: 5px;
-          counter-increment: item;
+  .content__list {
+    padding: 20px 0;
+    border-top: 1px solid $light-main-color;
+    border-bottom: 1px solid $light-main-color;
+  }
 
-          div {
-            padding-top: 3px;
-          }
-        }
+  .content__list-circle {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: item;
 
-        > li::before {
-          display: inline-block;
-          width: 44px;
-          height: 37px;
-          margin-right: 10px;
-          color: rgb(0 0 0 / 1);
-          text-align: center;
-          content: counter(item);
-          border: 2px solid $light-main-color;
-          border-radius: 100%;
-        }
+    > li {
+      display: flex;
+      margin-bottom: 5px;
+      counter-increment: item;
+
+      div {
+        padding-top: 3px;
       }
     }
 
-    .container {
-      width: auto;
-    }
-
-    .container-quote {
-      padding: 15px;
-      margin-bottom: 20px;
-      line-height: 1.5em;
-      color: $dark-main-color;
-      text-align: justify;
-      background-color: $bg-light-main-color;
-      border-left: 5px solid $dark-main-color;
+    > li::before {
+      display: inline-block;
+      width: 44px;
+      height: 37px;
+      margin-right: 10px;
+      color: rgb(0 0 0 / 1);
+      text-align: center;
+      content: counter(item);
+      border: 2px solid $light-main-color;
+      border-radius: 100%;
     }
   }
 }
