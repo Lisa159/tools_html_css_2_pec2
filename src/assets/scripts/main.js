@@ -34,7 +34,3 @@ function _removeActiveLinks() {
     document.getElementsByClassName("nav-link")[el].classList.remove("active");
   });
 }
-
-function goToMembers(){
-  window.location.href = "/profile.html";
-}
