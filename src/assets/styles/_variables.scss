@@ -1,7 +1,5 @@
 @use "sass:color";
 
-$font-family-serif: "Georgia", "Times New Roman", serif;
-
 $main-color: rgb(20 142 148 / 1);
 $light-main-color: color.scale($main-color, $lightness: 80%);
 $bg-light-main-color: color.scale($main-color, $lightness: 90%);
@@ -14,8 +12,6 @@ $breakpoints: (
   "medium": 650px,
   "large": 1024px,
 );
-
-$--bs-navbar-padding-x: 50px;
 
 //Bootstrap
 
